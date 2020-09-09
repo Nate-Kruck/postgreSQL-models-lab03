@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS video_games;
+
+CREATE TABLE video_games (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name TEXT NOT NULL,
+    genre TEXT,
+    rating SMALLINT
+);
