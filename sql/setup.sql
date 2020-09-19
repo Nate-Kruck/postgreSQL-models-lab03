@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS game_console;
 CREATE TABLE video_games (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name TEXT NOT NULL,
-    genre TEXT,
+    genre TEXT NOT NULL,
     rating SMALLINT
 );
 
