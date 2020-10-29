@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS video_games;
 DROP TABLE IF EXISTS game_console;
+DROP TABLE IF EXISTS game_retailers;
 
 CREATE TABLE video_games (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -13,3 +14,10 @@ CREATE TABLE game_console (
     name TEXT NOT NULL,
     console_company TEXT
 );
+
+CREATE TABLE game_retailers (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+    name TEXT NOT NULL,
+    url VARCHAR(255)
+);
+
